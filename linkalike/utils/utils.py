@@ -67,7 +67,7 @@ def pairwise_dissimilarities(df, cols=None, indices=None, verbose=False):
     nrows, _ = arr.shape
     distances = np.zeros((nrows, nrows), dtype=int)
 
-    for k in (tqdm(range(nrows)) if verbose else range(nrows)):
+    for k in (tqdm(range(nrows), desc='Users') if verbose else range(nrows)):
         arr_shifted = np.roll(arr, shift=-k, axis=0)  # Upward circular shift
         dist = np.diag(
             np.count_nonzero(arr != arr_shifted, axis=1)

@@ -33,6 +33,8 @@ setup(
     install_requires=install_requires,
     packages=["linkalike"],
     package_data={"linkalike": [
-        "resources/uk_weather_at_20Apr202213pm.gz"
+        "resources/ml_100k_data.gz",
+        "resources/ml_100k_item.gz",
+        "resources/ml_100k_user.gz"
     ]},
 )
