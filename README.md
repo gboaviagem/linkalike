@@ -1,7 +1,12 @@
-# Link-alike
+# LinkAlike
 ![coverage](./coverage.svg)
 
-Recommender systems using graph link prediction. 
+LinkAlike aims to build recommender systems using graph link prediction.
+As many have written about, the problem of product recommendation may be
+described as the prediction of a future edge in a user-item graph.
+This graph may be bipartite (i.e. only edges from users to items exist) or
+ we may define edges between users or between
+items, providing a flavour of content-based recommendation.
 
 ## Instalation
 
