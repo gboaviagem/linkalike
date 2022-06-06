@@ -8,6 +8,17 @@ This graph may be bipartite (i.e. only edges from users to items exist) or
  we may define edges between users or between
 items, providing a flavour of content-based recommendation.
 
+**This is still a work in progress.**
+
+## Progress:
+- [x] Create a benchmark dataset.
+- [x] Create a fast implementation of the pairwise dissimilarity in a set of arrays with categorical data.
+- Graph class:
+    - [ ] Create method to read `df`, `df_user` and `df_item` and create nodes.
+    - [ ] Create method to read `df` and create edges.
+    - [ ] Discretize numerical metadata if metadata datasets (`df_user` and `df_item`) are given.
+    - [ ] Create similarity edges if metadata datasets (`df_user` and `df_item`) are given.
+
 ## Instalation
 
 It is recommended to create a separated python environment to run `linkalike`. If one chooses to install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (my personal favorite), an appropriate environment is created and open through the lines
