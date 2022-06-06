@@ -11,13 +11,18 @@ items, providing a flavour of content-based recommendation.
 **This is still a work in progress.**
 
 ## Progress:
-- [x] Create a benchmark dataset.
-- [x] Create a fast implementation of the pairwise dissimilarity in a set of arrays with categorical data.
+- General:
+    - [x] Create a benchmark dataset.
+    - [x] Create a fast implementation of the pairwise dissimilarity in a set of arrays with categorical data.
 - Graph class:
-    - [ ] Create method to read `df`, `df_user` and `df_item` and create nodes.
-    - [ ] Create method to read `df` and create edges.
+    - [ ] Create method to create nodes out of `df`, `df_user` and `df_item`.
+    - [ ] Create method to create interaction (user-item) edges.
     - [ ] Discretize numerical metadata if metadata datasets (`df_user` and `df_item`) are given.
     - [ ] Create similarity edges if metadata datasets (`df_user` and `df_item`) are given.
+    - [ ] Create the `fit` method for node embeddings (use node2vec, but leave room for other methods).
+    - [ ] Create the `transform` method for node embeddings, with strategy for unseen nodes.
+- Recommendation:
+    - [ ] Create Recommender class, which receives node embeddings and predicts the existente of edges.
 
 ## Instalation
 
